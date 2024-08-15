@@ -67,7 +67,7 @@ main {
 }
 
 .equal {
-    grid-column: span 4;
+    grid-column: span 3 ;
     background-color: #ff9500;
     color: #ffffff;
 }
