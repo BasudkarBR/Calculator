@@ -28,7 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateDisplay(value) {
-        display.value += value;
+        console.log( display.value);
+
+        console.log(value == "backspace");
+        if(value == "backspace"){
+            display.value = display.value.slice(0, -1);
+            console.log( display.value);
+        }
+        else{
+            display.value += value;
+        }
     }
 
     function calculateResult() {
