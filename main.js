@@ -41,6 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function calculateResult() {
-        display.value = "Answer";
+        try {
+            display.value = eval(display.value);
+        } catch (e) {
+            display.value = 'Error';
+        }
     }
 });
